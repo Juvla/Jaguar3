@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
+    - name: juvla/Jaguar3
       uses: actions/checkout@v1
 
     - name: Configure AWS credentials
@@ -48,7 +48,7 @@ jobs:
         aws-region: us-east-2
 
     - name: Login to Amazon ECR
-      id: login-ecr
+      id: juvla/jaguar3
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Build, tag, and push image to Amazon ECR
